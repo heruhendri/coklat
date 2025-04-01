@@ -52,9 +52,9 @@ read -rp "Sub Domain (Contoh: DevsTn): " sub
 DOMAIN=devstun.my.id
 echo $sub > /root/cfku
 SUB_DOMAIN=${sub}.devstun.my.id
-CF_ID=cocresult1@gmail.com
-CF_KEY=8b69a018ff18da71e5d8297e720e14cb38286
-echo ".devstun.my.id" > /root/domain
+CF_ID=dedenirwansyah90@gmail.com
+CF_KEY=2affde1c2638841171d852fd8c60987f57c73
+echo "profesorhokage.my.id" > /root/domain
 echo $SUB_DOMAIN > /root/domain
 
 set -euo pipefail
