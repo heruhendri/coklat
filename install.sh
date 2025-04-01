@@ -22,8 +22,8 @@ green='\e[0;32m'
 TIME=$(date '+%d %b %Y')
 ipsaya=$(wget -qO- ipinfo.io/ip)
 TIMES="10"
-CHATID="5109603347"
-KEY="6206327239:AAFNfjFfSJh6cYHKiZZkvbVqJYEJ7OlHlgY"
+CHATID="1469244768"
+KEY="5504591455:AAE55jbVXpkWpQL6zoktBC-2rUgIGRnCpSg"
 URL="https://api.telegram.org/bot$KEY/sendMessage"
 clear
 export IP=$( curl -sS icanhazip.com )
@@ -78,7 +78,7 @@ clear
 MYIP=$(curl -sS ipv4.icanhazip.com)
 echo -e "\e[32mloading...\e[0m"
 clear
-izinsc="https://nata.serv00.net/license/v1.8/vip"
+izinsc="https://github.com/hokagelegend9999/ijin/raw/refs/heads/main/coklat"
 rm -f /usr/bin/user
 username=$(curl ${izinsc} | grep $MYIP | awk '{print $2}')
 echo "$username" >/usr/bin/user
@@ -108,7 +108,7 @@ sts="${Error}"
 fi
 echo -e "\e[32mloading...\e[0m"
 clear
-REPO="https://nata.serv00.net/v1.8/"
+REPO="https://raw.githubusercontent.com/hokagelegend9999/coklat/refs/heads/main/"
 start=$(date +%s)
 secs_to_human() {
 echo "Installation time : $((${1} / 3600)) hours $(((${1} / 60) % 60)) minute's $((${1} % 60)) seconds"
@@ -265,7 +265,7 @@ echo $nama > /etc/xray/username
 fi
 echo ""
 elif [[ $host == "2" ]]; then
-wget https://raw.githubusercontent.com/SETANTAZVPN/sc/main/cf.sh && chmod +x cf.sh && ./cf.sh
+wget https://raw.githubusercontent.com/hokagelegend9999/coklat/refs/heads/main/cf.sh && chmod +x cf.sh && ./cf.sh
 rm -f /root/cf.sh
 clear
 else
@@ -290,7 +290,7 @@ TEXT="
 <code>EXP SC : </code><code>$EXPSC</code>
 <code>────────────────────</code>
 <i>Automatic Notification from Github</i>
-"'&reply_markup={"inline_keyboard":[[{"text":"Website","url":"https://tunneling.biz.id"},{"text":"Grup","url":"https://t.me/@FranataaSTORE"}]]}'
+"'&reply_markup={"inline_keyboard":[[{"text":"Website","url":"https://tunneling.biz.id"},{"text":"Grup","url":"https://t.me/@hokage_legend_bot"}]]}'
 curl -s --max-time $TIMES -d "chat_id=$CHATID&disable_web_page_preview=1&text=$TEXT&parse_mode=html" $URL >/dev/null
 }
 clear
@@ -452,7 +452,7 @@ print_success "Password SSH"
 function udp_mini(){
 clear
 print_install "Memasang Service limit Quota"
-wget raw.githubusercontent.com/aripTaz/autoscript/main/Fls/limit.sh && chmod +x limit.sh && ./limit.sh
+wget https://github.com/hokagelegend9999/coklat/raw/refs/heads/main/Fls/limit.sh && chmod +x limit.sh && ./limit.sh
 cd
 wget -q -O /usr/bin/limit-ip "${REPO}Fls/limit-ip"
 chmod +x /usr/bin/*
@@ -652,9 +652,9 @@ print_success "Fail2ban"
 function ins_epro(){
 clear
 print_install "Menginstall ePro WebSocket Proxy"
-wget -O /usr/bin/ws "https://raw.githubusercontent.com/SETANTAZVPN/sc/main/ws/ws" >/dev/null 2>&1
-wget -O /usr/bin/tun.conf "https://raw.githubusercontent.com/SETANTAZVPN/sc/main/ws/tun.conf" >/dev/null 2>&1
-wget -O /etc/systemd/system/ws.service "https://raw.githubusercontent.com/SETANTAZVPN/sc/main/ws/ws.service" >/dev/null 2>&1
+wget -O /usr/bin/ws "https://github.com/hokagelegend9999/coklat/raw/refs/heads/main/ws/ws" >/dev/null 2>&1
+wget -O /usr/bin/tun.conf "https://github.com/hokagelegend9999/coklat/raw/refs/heads/main/ws/tun.conf" >/dev/null 2>&1
+wget -O /etc/systemd/system/ws.service "https://github.com/hokagelegend9999/coklat/raw/refs/heads/main/ws/ws.service" >/dev/null 2>&1
 chmod +x /etc/systemd/system/ws.service
 chmod +x /usr/bin/ws
 chmod 644 /usr/bin/tun.conf
@@ -745,7 +745,7 @@ systemctl start udp-custom &>/dev/null
 
 echo enable service udp-custom
 systemctl enable udp-custom &>/dev/null
-print_success "UDP-CUSTOM BY KIZARU STORE VPN"
+print_success "UDP-CUSTOM BY HOKAGE LEGEND"
 clear
 print_install "MEMASANG NOOBZVPNS"
 cd
@@ -760,7 +760,7 @@ systemctl start noobzvpns &>/dev/null
 
 echo enable service noobzvpns
 systemctl enable noobzvpns &>/dev/null
-print_success "NOOBZVPNS BY KIZARU STORE VPN"
+print_success "NOOBZVPNS BY HOKAGE LEGEND"
 }
 function ins_restart(){
 clear
