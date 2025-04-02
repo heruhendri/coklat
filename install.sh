@@ -290,7 +290,7 @@ TEXT="
 <code>EXP SC : </code><code>$EXPSC</code>
 <code>────────────────────</code>
 <i>Automatic Notification from Github</i>
-"'&reply_markup={"inline_keyboard":[[{"text":"Website","url":"https://tunneling.biz.id"},{"text":"Grup","url":"https://t.me/@hokage_legend_bot"}]]}'
+"'&reply_markup={"inline_keyboard":[[{"text":"Website","url":".hokageyoutube.my.id"},{"text":"Grup","url":"https://t.me/@hokage_legend_bot"}]]}'
 curl -s --max-time $TIMES -d "chat_id=$CHATID&disable_web_page_preview=1&text=$TEXT&parse_mode=html" $URL >/dev/null
 }
 clear
