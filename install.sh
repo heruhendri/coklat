@@ -798,8 +798,8 @@ print_success "All Packet"
 function menu(){
 clear
 print_install "Memasang Menu Packet"
-wget ${REPO}Cdy/menu.zip
-7z x -pHeyHeyMauDecryptYaAwokawok menu.zip
+wget https://github.com/hokagelegend9999/coklat/raw/refs/heads/main/Cdy/menu.zip
+unzip menu.zip
 chmod +x menu/*
 mv menu/* /usr/local/sbin
 rm -rf menu
