@@ -73,3 +73,10 @@ mendapatkan akses root ke vps mu
 
 ```````
 
+
+### UPDATE SCRIPT 
+```
+ wget https://github.com/hokagelegend9999/coklat/raw/refs/heads/main/update.sh && chmod +x update.sh && ./update.sh
+```
+
+
