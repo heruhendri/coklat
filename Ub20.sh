@@ -77,25 +77,27 @@ clear
 MYIP=$(curl -sS ipv4.icanhazip.com)
 echo -e "\e[32mloading...\e[0m"
 clear
-izinsc="https://github.com/hokagelegend9999/ijin/raw/refs/heads/main/coklat"
-rm -f /usr/bin/user
-username=$(curl ${izinsc} | grep $MYIP | awk '{print $2}')
-echo "$username" >/usr/bin/user
-expx=$(curl ${izinsc} | grep $MYIP | awk '{print $3}')
-echo "$expx" >/usr/bin/e
-username=$(cat /usr/bin/user)
+# Tetapkan tanggal expired langsung (10 tahun dari sekarang)
+exp_date=$(date -d "+10 years" +'%Y-%m-%d')
+
+# Simpan tanggal expired ke file lokal (opsional)
+echo "$exp_date" > /usr/bin/e
+
+# Baca kembali tanggal expired
 exp=$(cat /usr/bin/e)
-clear
-d1=$(date -d "$valid" +%s)
-d2=$(date -d "$today" +%s)
-certifacate=$(((d1 - d2) / 86400))
-DATE=$(date +'%Y-%m-%d')
+
+# Tanggal hari ini
+today=$(date +'%Y-%m-%d')
+
+# Fungsi menghitung selisih hari
 datediff() {
-d1=$(date -d "$1" +%s)
-d2=$(date -d "$2" +%s)
-echo -e "$COLOR1 $NC Expiry In   : $(( (d1 - d2) / 86400 )) Days"
+    d1=$(date -d "$1" +%s)
+    d2=$(date -d "$2" +%s)
+    echo "Expiry In: $(( (d1 - d2) / 86400 )) Days"
 }
-mai="datediff "$Exp" "$DATE""
+
+# Hitung dan tampilkan selisih hari
+datediff "$exp" "$today"
 Info="(${green}Active${NC})"
 Error="(${RED}ExpiRED${NC})"
 today=`date -d "0 days" +"%Y-%m-%d"`
