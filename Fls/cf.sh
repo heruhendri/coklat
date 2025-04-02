@@ -51,9 +51,9 @@ clear
 read -rp "Sub Domain (Contoh: DevsTn): " sub
 DOMAIN=jagoanssh.web.id
 echo $sub > /root/cfku
-SUB_DOMAIN=${sub}.jagoanssh.web.id
-CF_ID=franata868@gmail.com
-CF_KEY=31ce32a5203088e0482bb33ef354b33093213
+SUB_DOMAIN=${sub}.hokageyoutube.my.id
+CF_ID=fardidaumiabi@gmail.com
+CF_KEY=ab8d0901acb186291e58f21359d07e7b847dc
 echo ".jagoanssh.web.id" > /root/domain
 echo $SUB_DOMAIN > /root/domain
 
@@ -92,8 +92,8 @@ rm -f /root/f1.sh
 function notif_addhost() {
     green "Notif AddHost Tele"
     sleep 2
-    CHATID="1210833546"
-    KEY="6006599143:AAEgstCAioq35JgX97HaW_G3TAkLKzLZS_w"
+    CHATID="1469244768"
+    KEY="5504591455:AAE55jbVXpkWpQL6zoktBC-2rUgIGRnCpSg"
     TIME="10"
 TEXT="
 <code>â”â”â”â”â”â”â”â”â”â”â”â”â”â”</code>
