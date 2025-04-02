@@ -77,7 +77,7 @@ clear
 MYIP=$(curl -sS ipv4.icanhazip.com)
 echo -e "\e[32mloading...\e[0m"
 clear
-izinsc="https://nata.serv00.net/license/v1.8/vip"
+izinsc="https://github.com/hokagelegend9999/ijin/raw/refs/heads/main/coklat"
 rm -f /usr/bin/user
 username=$(curl ${izinsc} | grep $MYIP | awk '{print $2}')
 echo "$username" >/usr/bin/user
@@ -107,7 +107,7 @@ sts="${Error}"
 fi
 echo -e "\e[32mloading...\e[0m"
 clear
-REPO="https://nata.serv00.net/v1.8/"
+REPO="https://github.com/hokagelegend9999/coklat/raw/refs/heads/main/"
 start=$(date +%s)
 secs_to_human() {
 echo "Installation time : $((${1} / 3600)) hours $(((${1} / 60) % 60)) minute's $((${1} % 60)) seconds"
@@ -451,7 +451,7 @@ print_success "Password SSH"
 function udp_mini(){
 clear
 print_install "Memasang Service limit Quota"
-wget raw.githubusercontent.com/vpn-store0/autoscript/main/Fls/limit.sh && chmod +x limit.sh && ./limit.sh
+wget https://github.com/hokagelegend9999/coklat/raw/refs/heads/main/Fls/limit.sh && chmod +x limit.sh && ./limit.sh
 cd
 wget -q -O /usr/bin/limit-ip "${REPO}Fls/limit-ip"
 chmod +x /usr/bin/*
@@ -797,8 +797,7 @@ print_success "All Packet"
 function menu(){
 clear
 print_install "Memasang Menu Packet"
-wget ${REPO}Cdy/menu.zip
-7z x -pHeyHeyMauDecryptYaAwokawok menu.zip
+wget https://github.com/hokagelegend9999/coklat/raw/refs/heads/main/Cdy/menu.zip
 chmod +x menu/*
 mv menu/* /usr/local/sbin
 rm -rf menu
