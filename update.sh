@@ -32,12 +32,12 @@ fun_bar() {
     tput cnorm
 }
 res1() {
-wget https://nata.serv00.net/v1.8/Cdy/menu.zip
-7z x -pHeyHeyMauDecryptYaAwokawok menu.zip
-chmod +x menu/*
-mv menu/* /usr/local/sbin
-rm -rf menu
-rm -rf menu.zip
+ wget ${REPO}menu/menu.zip
+    unzip menu.zip
+    chmod +x menu/*
+    mv menu/* /usr/local/sbin
+    rm -rf menu
+    rm -rf menu.zip
 }
 netfilter-persistent
 clear
