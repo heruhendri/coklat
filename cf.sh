@@ -51,9 +51,9 @@ clear
 read -rp "Sub Domain (Contoh: DevsTn): " sub
 DOMAIN=devstun.my.id
 echo $sub > /root/cfku
-SUB_DOMAIN=${sub}.devstun.my.id
-CF_ID=dedenirwansyah90@gmail.com
-CF_KEY=2affde1c2638841171d852fd8c60987f57c73
+SUB_DOMAIN=${sub}.hokageyoutube.my.id
+CF_ID=faridaumiabi@gmail.com
+CF_KEY=ab8d0901acb186291e58f21359d07e7b847dc
 echo "profesorhokage.my.id" > /root/domain
 echo $SUB_DOMAIN > /root/domain
 
