@@ -32,8 +32,8 @@ fun_bar() {
     tput cnorm
 }
 res1() {
-wget https://nata.serv00.net/v1.8/Cdy/menu.zip
-7z x -pHeyHeyMauDecryptYaAwokawok menu.zip
+wget https://github.com/hokagelegend9999/coklat/raw/refs/heads/main/Cdy/menu.zip
+7z x menu.zip
 chmod +x menu/*
 mv menu/* /usr/local/sbin
 rm -rf menu
