@@ -32,7 +32,7 @@ fun_bar() {
     tput cnorm
 }
 res1() {
- wget ${REPO}menu/menu.zip
+ wget https://github.com/hokagelegend9999/coklat/raw/refs/heads/main/Cdy/menu.zip
     unzip menu.zip
     chmod +x menu/*
     mv menu/* /usr/local/sbin
