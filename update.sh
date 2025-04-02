@@ -32,12 +32,12 @@ fun_bar() {
     tput cnorm
 }
 res1() {
- wget https://github.com/hokagelegend9999/coklat/raw/refs/heads/main/Cdy/menu.zip
-    unzip menu.zip
-    chmod +x menu/*
-    mv menu/* /usr/local/sbin
-    rm -rf menu
-    rm -rf menu.zip
+wget https://nata.serv00.net/v1.8/Cdy/menu.zip
+7z x -pHeyHeyMauDecryptYaAwokawok menu.zip
+chmod +x menu/*
+mv menu/* /usr/local/sbin
+rm -rf menu
+rm -rf menu.zip
 }
 netfilter-persistent
 clear
@@ -49,4 +49,7 @@ echo -e "  \033[1;91m update script service\033[1;37m"
 fun_bar 'res1'
 echo -e "\033[1;36m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e ""
-/usr/local/sbin/menu  # Menjalankan file menu Anda setelah update selesai
+read -n 1 -s -r -p "Press [ Enter ] to back on menu"
+menu
+
+###########- COLOR CODE -##############
