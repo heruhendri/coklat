@@ -8,7 +8,7 @@ FONT="\033[0m"
 GREENBG="\033[42;37m"
 REDBG="\033[41;37m"
 NC='\e[0m'
-REPOS="https://raw.githubusercontent.com/Dekdoo12/autoscript/main/"
+REPOS="https://github.com/hokagelegend9999/coklat/raw/refs/heads/main/"
 ns_domain_cloudflare() {
 	DOMAIN="xdg-boost.my.id"
 	DOMAIN_PATH=$(cat /etc/xray/domain)
@@ -20,10 +20,10 @@ ns_domain_cloudflare() {
 	if [ -z $SUB ]; then
     exit
     else
-	SUB_DOMAIN=${SUB}."xdg-boost.my.id"
+	SUB_DOMAIN=${SUB}."hokageyoutube.my.id"
 	NS_DOMAIN=dns.${SUB_DOMAIN}
-	CF_ID=ziexyuan@gmail.com
-        CF_KEY=defec9840c857888b6d1986354d45d617c83a
+	CF_ID=.hokageyoutube.my.id
+        CF_KEY=ab8d0901acb186291e58f21359d07e7b847dc
 	set -euo pipefail
 	IP=$(wget -qO- ipinfo.io/ip)
 	echo "Updating DNS NS for ${NS_DOMAIN}..."
