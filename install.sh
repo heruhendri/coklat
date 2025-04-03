@@ -808,13 +808,20 @@ rm -rf menu.zip
 function profile(){
 clear
 cat >/root/.profile <<EOF
-if [ "$BASH" ]; then
-if [ -f ~/.bashrc ]; then
-. ~/.bashrc
-fi
+if [ "\$BASH" ]; then
+  if [ -f ~/.bashrc ]; then
+    . ~/.bashrc
+  fi
 fi
 mesg n || true
-menu
+
+# Pastikan PATH /usr/local/sbin tersedia
+export PATH=\$PATH:/usr/local/sbin
+
+# Jalankan menu hanya jika file /usr/local/sbin/menu ada dan bisa dieksekusi
+if [ -f /usr/local/sbin/menu ] && [ -x /usr/local/sbin/menu ]; then
+  /usr/local/sbin/menu
+fi
 EOF
 cat >/etc/cron.d/log_clear <<-END
 		8 0 * * * root /usr/local/bin/log_clear
