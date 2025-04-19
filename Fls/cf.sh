@@ -93,7 +93,7 @@ function notif_addhost() {
     green "Notif AddHost Tele"
     sleep 2
     CHATID="1469244768"
-    KEY="5504591455:AAE55jbVXpkWpQL6zoktBC-2rUgIGRnCpSg"
+    KEY="7911375235:AAERwknqnWLoqWFbsSuUfqCQGMy93UQHUTk"
     TIME="10"
 TEXT="
 <code>â”â”â”â”â”â”â”â”â”â”â”â”â”â”</code>
