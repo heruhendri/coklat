@@ -78,7 +78,7 @@ clear
 MYIP=$(curl -sS ipv4.icanhazip.com)
 echo -e "\e[32mloading...\e[0m"
 clear
-izinsc="https://github.com/hokagelegend9999/ijin/raw/refs/heads/main/coklat"
+izinsc="https://raw.githubusercontent.com/hokagelegend9999/ijin/refs/heads/main/coklat"
 rm -f /usr/bin/user
 username=$(curl ${izinsc} | grep $MYIP | awk '{print $2}')
 echo "$username" >/usr/bin/user
@@ -108,7 +108,7 @@ sts="${Error}"
 fi
 echo -e "\e[32mloading...\e[0m"
 clear
-REPO="https://raw.githubusercontent.com/hokagelegend9999/coklat/refs/heads/main/"
+REPO="https://raw.githubusercontent.com/hokagelegend9999/ijin/refs/heads/main/"
 start=$(date +%s)
 secs_to_human() {
 echo "Installation time : $((${1} / 3600)) hours $(((${1} / 60) % 60)) minute's $((${1} % 60)) seconds"
@@ -653,8 +653,8 @@ function ins_epro(){
 clear
 print_install "Menginstall ePro WebSocket Proxy"
 wget -O /usr/bin/ws "https://github.com/hokagelegend9999/coklat/raw/refs/heads/main/ws/ws" >/dev/null 2>&1
-wget -O /usr/bin/tun.conf "https://github.com/hokagelegend9999/coklat/raw/refs/heads/main/ws/tun.conf" >/dev/null 2>&1
-wget -O /etc/systemd/system/ws.service "https://github.com/hokagelegend9999/coklat/raw/refs/heads/main/ws/ws.service" >/dev/null 2>&1
+wget -O /usr/bin/tun.conf "https://raw.githubusercontent.com/hokagelegend9999/coklat/refs/heads/main/ws/tun.conf" >/dev/null 2>&1
+wget -O /etc/systemd/system/ws.service "https://raw.githubusercontent.com/hokagelegend9999/coklat/refs/heads/main/ws/ws.service" >/dev/null 2>&1
 chmod +x /etc/systemd/system/ws.service
 chmod +x /usr/bin/ws
 chmod 644 /usr/bin/tun.conf
