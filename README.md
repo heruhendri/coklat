@@ -6,9 +6,7 @@
 apt install -y && apt update -y && apt upgrade -y && wget -q https://raw.githubusercontent.com/hokagelegend9999/coklat/refs/heads/main/install.sh && chmod +x install.sh && ./install.sh
 ```
 
-## UPDATE SCRIPT
-```
-wget -q https://raw.githubusercontent.com/hokagelegend9999/alpha/main/update.sh && chmod +x update.sh && ./update.sh
+/raw.githubusercontent.com/hokagelegend9999/alpha/main/update.sh && chmod +x update.sh && ./update.sh
 ```
 
 ### SUPPORT OS LINUX
