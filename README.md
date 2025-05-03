@@ -6,7 +6,6 @@
 apt install -y && apt update -y && apt upgrade -y && wget -q https://raw.githubusercontent.com/hokagelegend9999/coklat/refs/heads/main/install.sh && chmod +x install.sh && ./install.sh
 ```
 
-/raw.githubusercontent.com/hokagelegend9999/alpha/main/update.sh && chmod +x update.sh && ./update.sh
 ```
 
 ### SUPPORT OS LINUX
@@ -37,6 +36,7 @@ Jika Statsus Service Masih Off
 Silahkan Reboot vps kalian
 ```
 
+### langkah langkah
 
 - Langkah 1: 
 Membuat Bot di Telegram
@@ -63,7 +63,7 @@ Bot akan secara otomatis mengirimkan pesan berisi chat ID kamu.
 
 
 
-mendapatkan akses root ke vps mu
+### mendapatkan akses root ke vps mu
 
 ``````
 
@@ -75,10 +75,12 @@ mendapatkan akses root ke vps mu
 ### UPDATE SCRIPT
 
 
-```
- wget https://github.com/hokagelegend9999/coklat/raw/refs/heads/main/update.sh && chmod +x update.sh && ./update.sh
-```
+`````
 
-### ALTER UBUNTU
+ wget https://github.com/hokagelegend9999/coklat/raw/refs/heads/main/update.sh && chmod +x update.sh && ./update.sh
+
+``````
+
+
 
 
