@@ -10,9 +10,6 @@
 2 :    
 <pre><code>apt install curl jq wget screen build-essential -y && reboot</code></pre>
 
-3:    
-➽ Pastikan anda sudah login sebagai root :    
-<pre><code>apt install tmux -y && wget -q https://raw.githubusercontent.com/hokagelegend9999/gas/refs/heads/main/home && chmod +x home && tmux new-session -d -s hokagelegend './home' && tmux attach -t hokagelegend</code></pre>
 
 ### INSTALL SCRIPT 
 ```
