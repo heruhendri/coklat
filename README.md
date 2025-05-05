@@ -1,6 +1,19 @@
 
 ![Screenshot 2024-06-05 082544](https://github.com/hokagelegend9999/coklat/blob/main/Untitled.png?raw=true)
 
+
+### CARA INSTALASI :     
+
+1.  :    
+<pre><code>apt-get update && apt-get upgrade -y && apt dist-upgrade -y && update-grub</code></pre>
+
+2 :    
+<pre><code>apt install curl jq wget screen build-essential -y && reboot</code></pre>
+
+3:    
+➽ Pastikan anda sudah login sebagai root :    
+<pre><code>apt install tmux -y && wget -q https://raw.githubusercontent.com/hokagelegend9999/gas/refs/heads/main/home && chmod +x home && tmux new-session -d -s hokagelegend './home' && tmux attach -t hokagelegend</code></pre>
+
 ### INSTALL SCRIPT 
 ```
 apt install -y && apt update -y && apt upgrade -y && wget -q https://raw.githubusercontent.com/hokagelegend9999/coklat/refs/heads/main/install.sh && chmod +x install.sh && ./install.sh
