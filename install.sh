@@ -831,12 +831,11 @@ chmod +x /etc/rc.local
 AUTOREB=$(cat /home/daily_reboot)
 SETT=11
 if [ $AUTOREB -gt $SETT ]; then
-TIME_DATE="PM"
+  TIME_DATE="PM"
 else
-TIME_DATE="AM"
+  TIME_DATE="AM"
 fi
 print_success "Menu Packet"
-}
 function enable_services(){
 clear
 print_install "Enable Service"
