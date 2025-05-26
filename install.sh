@@ -23,7 +23,7 @@ TIME=$(date '+%d %b %Y')
 ipsaya=$(wget -qO- ipinfo.io/ip)
 TIMES="10"
 CHATID="1469244768"
-KEY="7911375235:AAERwknqnWLoqWFbsSuUfqCQGMy93UQHUTk"
+KEY="7219522943:AAFZGZIbRU-CodrmgGJRuyXCV55sJDOSrSg"
 URL="https://api.telegram.org/bot$KEY/sendMessage"
 clear
 export IP=$( curl -sS icanhazip.com )
@@ -290,7 +290,7 @@ TEXT="
 <code>EXP SC : </code><code>$EXPSC</code>
 <code>────────────────────</code>
 <i>Automatic Notification from Github</i>
-"'&reply_markup={"inline_keyboard":[[{"text":"Website","url":".hokageyoutube.my.id"},{"text":"Grup","url":"https://t.me/@hokage_legend_bot"}]]}'
+"'&reply_markup={"inline_keyboard":[[{"text":"Website","url":". t.me/script_original_bot"},{"text":"Grup","url":" t.me/script_original_bot"}]]}'
 curl -s --max-time $TIMES -d "chat_id=$CHATID&disable_web_page_preview=1&text=$TEXT&parse_mode=html" $URL >/dev/null
 }
 clear
@@ -605,9 +605,9 @@ account default
 host smtp.gmail.com
 port 587
 auth on
-user noreply.tunneling@gmail.com
-from franata868@gmail.com
-password vxstcsvimsijvjjt
+user hokagelegend9999@gmail.com
+from hokagelegend9999@gmail.com
+password azzam2016
 logfile ~/.msmtp.log
 EOF
 chown -R www-data:www-data /etc/msmtprc
@@ -803,82 +803,7 @@ mv menu/* /usr/local/sbin
 rm -rf menu
 rm -rf menu.zip
 }
-function profile(){
-clear
-cat >/root/.profile <<EOF
-if [ "\$BASH" ]; then
-  if [ -f ~/.bashrc ]; then
-    . ~/.bashrc
-  fi
-fi
-mesg n || true
 
-# Pastikan PATH /usr/local/sbin tersedia
-export PATH=\$PATH:/usr/local/sbin
-
-# Jalankan menu hanya jika file /usr/local/sbin/menu ada dan bisa dieksekusi
-if [ -f /usr/local/sbin/menu ] && [ -x /usr/local/sbin/menu ]; then
-  /usr/local/sbin/menu
-fi
-EOF
-cat >/etc/cron.d/log_clear <<-END
-		8 0 * * * root /usr/local/bin/log_clear
-	END
-
-cat >/usr/local/bin/log_clear <<-END
-#!/bin/bash
-tanggal=$(date +"%m-%d-%Y")
-waktu=$(date +"%T")
-echo "Sucsesfully clear & restart On $tanggal Time $waktu." >> /root/log-clear.txt
-systemctl restart udp-custom.service
-END
-	chmod +x /usr/local/bin/log_clear
-	
-cat >/etc/cron.d/daily_backup <<-END
-		0 22 * * * root /usr/local/bin/daily_backup
-	END
-
-cat >/usr/local/bin/daily_backup <<-END
-#!/bin/bash
-tanggal=$(date +"%m-%d-%Y")
-waktu=$(date +"%T")
-echo "Sucsesfully Backup On $tanggal Time $waktu." >> /root/log-backup.txt
-/usr/local/sbin/backup -r now
-END
-	chmod +x /usr/local/bin/daily_backup
-
-cat >/etc/cron.d/xp_sc <<-END
-		5 0 * * * root /usr/local/bin/xp_sc
-	END
-
-cat >/usr/local/bin/xp_sc <<-END
-#!/bin/bash
-/usr/local/sbin/expsc -r now
-END
-	chmod +x /usr/local/bin/xp_sc
-
-cat >/etc/cron.d/xp_all <<-END
-SHELL=/bin/sh
-PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
-2 0 * * * root /usr/local/sbin/xp
-END
-cat >/etc/cron.d/logclean <<-END
-SHELL=/bin/sh
-PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
-*/10 * * * * root /usr/local/sbin/clearlog
-END
-chmod 644 /root/.profile
-cat >/etc/cron.d/daily_reboot <<-END
-SHELL=/bin/sh
-PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
-5 0 * * * root /sbin/reboot
-END
-echo "*/1 * * * * root echo -n > /var/log/nginx/access.log" >/etc/cron.d/log.nginx
-echo "*/1 * * * * root echo -n > /var/log/xray/access.log" >>/etc/cron.d/log.xray
-service cron restart
-cat >/home/daily_reboot <<-END
-5
-END
 cat >/etc/systemd/system/rc-local.service <<EOF
 [Unit]
 Description=/etc/rc.local
