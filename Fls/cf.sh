@@ -1,6 +1,6 @@
 #!/bin/bash
 # Edition : Stable Edition V3.0
-# (C) Copyright 2023
+# (C) Copyright 2025
 # =========================================
 #!/bin/bash
 Green="\e[92;1m"
@@ -93,7 +93,7 @@ function notif_addhost() {
     green "Notif AddHost Tele"
     sleep 2
     CHATID="1469244768"
-    KEY="7911375235:AAERwknqnWLoqWFbsSuUfqCQGMy93UQHUTk"
+    KEY="7219522943:AAFZGZIbRU-CodrmgGJRuyXCV55sJDOSrSg"
     TIME="10"
 TEXT="
 <code>â”â”â”â”â”â”â”â”â”â”â”â”â”â”</code>
@@ -104,7 +104,7 @@ TEXT="
 <b>DOMAIN :</b> <code>$sub</code>
 <code>â”â”â”â”â”â”â”â”â”â”â”â”â”â”</code>
 <code>NEW ADD DOMAIN</code>
-<code>BY BOT : @myridwan</code>
+<code>BY BOT : @HookageLegend</code>
 "
 curl -s --max-time $TIME -d "chat_id=$CHATID&disable_web_page_preview=1&text=$TEXT&parse_mode=html" $URL >/dev/null
 }
