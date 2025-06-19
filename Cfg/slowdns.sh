@@ -10,7 +10,7 @@ REDBG="\033[41;37m"
 NC='\e[0m'
 REPOS="https://github.com/hokagelegend9999/coklat/raw/refs/heads/main/"
 ns_domain_cloudflare() {
-	DOMAIN="xdg-boost.my.id"
+	DOMAIN="hokageyoutube.my.id"
 	DOMAIN_PATH=$(cat /etc/xray/domain)
 	echo -e "${BLUE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
 	echo -e "           Masukan Subdomain              "
