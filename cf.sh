@@ -49,7 +49,7 @@ apt install jq curl -y
 clear
 
 read -rp "Sub Domain (Contoh: DevsTn): " sub
-DOMAIN=devstun.my.id
+DOMAIN=hokageyoutube.my.id
 echo $sub > /root/cfku
 SUB_DOMAIN=${sub}.hokageyoutube.my.id
 CF_ID=faridaumiabi@gmail.com
@@ -104,7 +104,7 @@ TEXT="
 <b>DOMAIN :</b> <code>$sub</code>
 <code>â”â”â”â”â”â”â”â”â”â”â”â”â”â”</code>
 <code>NEW ADD DOMAIN</code>
-<code>BY BOT : @myridwan</code>
+<code>BY BOT : @HookageLegend</code>
 "
 curl -s --max-time $TIME -d "chat_id=$CHATID&disable_web_page_preview=1&text=$TEXT&parse_mode=html" $URL >/dev/null
 }
